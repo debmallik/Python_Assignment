@@ -1,15 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title></title>
-</head>
-<body>
+{% extends "layout.html" %}
+{% block content %}
     {% for post in posts %}
         <h1>{{post.title}}</h1>
         <p>{{post.blog}}</p>
         <p>By {{post.author}} on {{post.date}}</p>
     {% endfor %}
-
-</body>
-</html>
+{% endblock content %}

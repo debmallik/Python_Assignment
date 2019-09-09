@@ -4,7 +4,7 @@ app=Flask(__name__)
 posts=[
     {
         "author":"Debashis",
-        "title":"Blog post 1",
+        "title":"Blog post 1   ",
         "blog":"Proud to be Indian",
         "date":"8th Sept 2019"
     },
@@ -22,7 +22,7 @@ def home():
 
 @app.route('/profile')
 def profile():
-    return render_template('profile.html',posts=posts)
+    return render_template('profile.html',title='profile')
 
 if __name__ == "__main__":
     app.run(debug=True)
