@@ -1,8 +1,10 @@
 {% extends "layout.html" %}
 {% block content %}
     {% for post in posts %}
-        <h1>{{post.title}}</h1>
-        <p>{{post.blog}}</p>
-        <p>By {{post.author}} on {{post.date}}</p>
+        <h1>{{post.message}}</h1>
+        <h4><font color="red">{{post.promise}}</font></h4>
+        <p>{{post.point1}}</p>
+        <p>{{post.point2}}</p>
+        <p>{{post.point3}}</p>
     {% endfor %}
 {% endblock content %}
